@@ -36,5 +36,5 @@ repository: "heewoneha/heewoneha.github.io"
 comments:
   provider: "utterances"
   utterances:
-    theme: "photon-dark"
+    theme: "github-light"
     issue_term: "pathname"
