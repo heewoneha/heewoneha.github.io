@@ -11,8 +11,9 @@ layout: page
 
 ### 🌎 Location
 
-<div class="gmap">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4410.531348881961!2d-86.91478278877308!3d40.42709445671042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2ac2c7b9d9b%3A0xcd8b71d26d7bb67f!2sK-SW%20Square!5e0!3m2!1sko!2skr!4v1657419396612!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="gmap" height="0" style="
++overflow:hidden; padding-bottom: 56.25%; position: relative;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4410.531348881961!2d-86.91478278877308!3d40.42709445671042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8812e2ac2c7b9d9b%3A0xcd8b71d26d7bb67f!2sK-SW%20Square!5e0!3m2!1sko!2skr!4v1657419396612!5m2!1sko!2skr" width="100%" height="100%" style="border:0; position:absolute; left:0; top:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
 ### 💬 Question
