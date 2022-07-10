@@ -1,4 +1,4 @@
-title: "heewoneha Blog"
+title: "Heewon's Diary"
 author: "Heewon Jeong"
 description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
@@ -17,7 +17,10 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
-  - {file: "README.md"}
+  - title: "About Program"
+    file: "README.md"
+  - title: "devBlog"
+    url: "https://velog.io/@heering_"
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:jhw07191@gmail.com"}
