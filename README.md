@@ -4,7 +4,13 @@ permalink: "/about/"
 layout: page
 ---
 
-### 📝 K-SW Square Program (2022 Fall)
+<div align="center">
+    안녕하세요, 충북대학교 컴퓨터공학과 정희원입니다.
+</div>
+
+<br>
+
+# 📝 K-SW Square Program (2022 가을)
 
 > 미국 퍼듀대학교에서 16주 동안 캡스톤 디자인 프로젝트, 영어 교육, 전공 청강, 최신 기술 세미나
 

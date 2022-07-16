@@ -17,15 +17,15 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
-  - title: "About Program"
+  - title: "About"
     file: "README.md"
-  - title: "devBlog"
-    url: "https://velog.io/@heering_"
+  - title: "Tags"
+    url: "" # 나중에 추가
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:jhw07191@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/heewoneha"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Velog, icon: velog, url: "https://velog.io/@heering_"}
 
 plugins:
  - jekyll-feed
