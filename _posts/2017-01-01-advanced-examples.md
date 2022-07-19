@@ -2,6 +2,7 @@
 title:  "Advanced examples"
 mathjax: true
 layout: post
+categories: [practice]
 tags: [test, admin]
 date: "2017-01-01"
 ---

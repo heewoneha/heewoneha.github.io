@@ -19,6 +19,8 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
   - title: "About"
     file: "README.md"
+  - title: "Categories"
+    url: "categories"
   - title: "Tags"
     url: "tags"
 

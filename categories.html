@@ -1,0 +1,71 @@
+---
+layout: page
+title: "Categories"
+permalink: /categories/
+
+---
+
+<ul class="category-cloud">
+    {% for category in site.categories %}
+        <!-- category_name 변수 지정: 카테고리명은 소문자화(slugize) 한다 -->
+        {% capture category_name %}{{category|first|slugize}}{% endcapture %}
+        <!-- font_size 변수 지정: 카테고리숫자/전체카테고리숫자 * 100 + 50 -->
+        {% capture font_size %}{{category|last|size| times:100 | divided_by:site.categories.size | plus: 50 }}%{% endcapture %}
+        <!-- category_size 변수 지정-->
+        {% capture category_size %}{{category|last|size}}{% endcapture %}
+    
+        <li>
+            <a href="#{{category_name}}" onclick="showCategory('#{{category_name}}')">
+                {{category_name}} ({{category_size}})
+            </a>
+        </li>
+    
+    {% endfor %}
+    </ul>
+    
+    <hr>
+
+    <div id="archives">
+    {% for category in site.categories %}
+    
+        {% capture category_name %}{{category|first|slugize}}{% endcapture %}
+    
+        <div class="archive-group" style="display:none" id="{{category_name}}">
+    
+        <h3 id="{{category_name}}">📂 {{ category_name }}</h3>
+    
+        {% for post in site.categories[category_name] %}
+            <article class="archive-item">
+                <h4 style="color:dimgrey">
+                    <!-- click 하여 show/hide 한다 -->
+                    <a href="{{ root_url }}{{ post.url }}">
+                        {{post.title}}
+                    </a>
+                    ─── {{ post.date|date_to_long_string }}
+                </h4>
+            </article>
+        {% endfor %}
+    
+        </div>
+    {% endfor %}
+    </div>
+    
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function init(){
+            var url = window.location.href;
+            var req = /#([^\s]+)$/.exec(url);
+    
+            if(!Array.isArray(req)) {
+                return false;
+            }
+            var selector = '#' + req.pop();
+            showCategory(selector);
+        });
+    
+        function showCategory(selector) {
+            $('.archive-group').hide();
+            $(selector).show();
+        }
+    </script>
