@@ -5,7 +5,7 @@ permalink: /tags/
 
 ---
 
-<ul class="tag-cloud">
+<div class="tag-cloud">
     {% for tag in site.tags %}
         <!-- tag_name 변수 지정: 태그명은 소문자화(slugize) 한다 -->
         {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
@@ -14,16 +14,14 @@ permalink: /tags/
         <!-- tag_size 변수 지정-->
         {% capture tag_size %}{{tag|last|size}}{% endcapture %}
     
-        <li>
+        <span class="tags-button">
             <a href="#{{tag_name}}" onclick="showTag('#{{tag_name}}')">
                 {{tag_name}} ({{tag_size}})
             </a>
-        </li>
+        </span>
     
     {% endfor %}
-    </ul>
-    
-    <hr>
+    </div>
 
     <div id="archives">
     {% for tag in site.tags %}

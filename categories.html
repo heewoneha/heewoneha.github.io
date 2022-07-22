@@ -5,7 +5,7 @@ permalink: /categories/
 
 ---
 
-<ul class="category-cloud">
+<div class="category-cloud">
     {% for category in site.categories %}
         <!-- category_name 변수 지정: 카테고리명은 소문자화(slugize) 한다 -->
         {% capture category_name %}{{category|first|slugize}}{% endcapture %}
@@ -14,16 +14,14 @@ permalink: /categories/
         <!-- category_size 변수 지정-->
         {% capture category_size %}{{category|last|size}}{% endcapture %}
     
-        <li>
+        <span class="categories-button">
             <a href="#{{category_name}}" onclick="showCategory('#{{category_name}}')">
                 {{category_name}} ({{category_size}})
             </a>
-        </li>
+        </span>
     
     {% endfor %}
     </ul>
-    
-    <hr>
 
     <div id="archives">
     {% for category in site.categories %}
