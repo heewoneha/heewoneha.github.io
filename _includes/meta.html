@@ -1,12 +1,13 @@
 <header>
   <h1><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h1>
   {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
-  <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }} & </time>
+  <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }}</time>
 
   <!-- 카테고리 미리보기 표시 -->
     <!-- home이라면 post.categories -->
     {% if post.categories %}
-    <svg viewBox="0 0 576 512" class ="icon" style="fill:#909194;"><path d="M147.8 192H480V144C480 117.5 458.5 96 432 96h-160l-64-64h-160C21.49 32 0 53.49 0 80v328.4l90.54-181.1C101.4 205.6 123.4 192 147.8 192zM543.1 224H147.8C135.7 224 124.6 230.8 119.2 241.7L0 480h447.1c12.12 0 23.2-6.852 28.62-17.69l96-192C583.2 249 567.7 224 543.1 224z"/></svg>
+    <span style = "color:#909194;"> & </span>
+    <svg viewBox="0 0 512 512" class ="icon" style="fill:#909194;"><path d="M447.1 96h-172.1L226.7 50.75C214.7 38.74 198.5 32 181.5 32H63.1c-35.35 0-64 28.66-64 64v320c0 35.34 28.65 64 64 64h384c35.35 0 64-28.66 64-64V160C511.1 124.7 483.3 96 447.1 96zM463.1 416c0 8.824-7.178 16-16 16h-384c-8.822 0-16-7.176-16-16V96c0-8.824 7.178-16 16-16h117.5c4.273 0 8.293 1.664 11.31 4.688L255.1 144h192c8.822 0 16 7.176 16 16V416z"/></svg>
     <span style = "color:#909194;">{{ post.categories }}</span>
     {% endif %}
     <!-- post라면 page.categories 호출 안하고 pass -->
