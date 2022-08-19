@@ -4,9 +4,12 @@ permalink: "/about/"
 layout: page
 ---
 
-<div align="center">
-    안녕하세요, 여기에 자기소개 할 예정
-</div>
+<center><img src="https://user-images.githubusercontent.com/74031620/185634073-e2b7d196-c39a-4b5a-bbdb-fafb7761c76b.jpg" width="30%" height="30%" style= "border-radius: 5px"></center>
+    
+    >> Hello, My name is Heewon Jeong ! :-)
+    >> I go to Chungbuk National University.
+    >> And I'm majoring in Computer Engineering. (undergraduate student)
+    >> Below is a list of programs that I have participated in.
 
 <br>
 
