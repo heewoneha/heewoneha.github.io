@@ -4,12 +4,15 @@ permalink: "/about/"
 layout: page
 ---
 
-<center><img src="https://user-images.githubusercontent.com/74031620/185634073-e2b7d196-c39a-4b5a-bbdb-fafb7761c76b.jpg" width="30%" height="30%" style= "border-radius: 5px"></center>
-    
-    >> Hello, My name is Heewon Jeong ! :-)
-    >> I go to Chungbuk National University.
-    >> And I'm majoring in Computer Engineering. (undergraduate student)
+<div>
+<img class="profile-image" src="https://user-images.githubusercontent.com/74031620/185634073-e2b7d196-c39a-4b5a-bbdb-fafb7761c76b.jpg" width="13%" height="13%">
+<div class="profile-code-box" width="50%" height="30%">
+    >> Hello, My name is Heewon Jeong ! :-) <br>
+    >> I go to Chungbuk National University. <br>
+    >> And I'm majoring in Computer Engineering. (undergraduate student) <br>
     >> Below is a list of programs that I have participated in.
+</div>
+</div>
 
 <br>
 
